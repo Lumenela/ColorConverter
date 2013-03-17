@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/color_converter.js"></script>
+		<script type="text/javascript" src="js/jquery.popover-1.1.2.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/fancyInput.js"></script>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/fancyInput.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		
+
+		<div class="title shadow">
+			<h1>Color conversion</h1>
+		</div>
+		<div>
+		<div class="color_form shadow" id="hsv_form">
+				<div class="color_form_item ">
+					
+						<section class="input">
+							<label class="model-item-label">H:</label>
+							<div class="fancyInput ">
+								<input type="text" id="hsv_H">
+							</div>
+							<label>&#176</label>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+					
+						<section class="input">
+							<label class="model-item-label">S:</label>
+							<div class="fancyInput ">
+								<input type="text" id="hsv_S">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">V:</label>
+							<div class="fancyInput ">
+								<input type="text" id="hsv_V">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div id="hsv_color" class="color shadow">
+				</div>
+				<div class="color-description">
+					Hue, Saturation, Value is a color model that describes colors (hue) in terms of their shade (saturation) and their brightness (value). Hue (number from 0 to 360 degrees) representing hues of red (starts at 0), yellow (starts at 60), green (starts at 120), cyan (starts at 180), blue (starts at 240), and magenta (starts at 300).Saturation is the amount of gray (0% to 100%) in the color. Value works in conjunction with saturation and describes or intensity of the color from 0% to 100%.
+				</div>
+				<div>
+					<a href="#" class="button button-blue convert-button" id="hsv_convert">
+					    <span>Convert</span>
+					</a>
+				</div>
+		</div>
+
+		<div class="color_form shadow" id="rgb_form">
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">R:</label>
+								<div class="fancyInput ">
+									<input type="text" id="rgb_R">
+								</div>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">G:</label>
+								<div class="fancyInput ">
+									<input type="text" id="rgb_G">
+								</div>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">B:</label>
+								<div class="fancyInput ">
+									<input type="text" id="rgb_B">
+								</div>
+						</section>
+					
+				</div>
+				</br>
+				<div id="rgb_color"  class="color shadow">
+				</div>
+				<div  class="color-description">
+					The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The main purpose of the RGB color model is for the sensing, representation, and display of images in electronic systems, such as televisions and computers, though it has also been used in conventional photography. Before the electronic age, the RGB color model already had a solid theory behind it, based in human perception of colors.
+				</div>
+				<div>
+					<a href="#" class="button button-blue convert-button" id="rgb_convert">
+					    <span>Convert</span>
+					</a>
+				</div>
+		</div>
+
+		<div class="color_form shadow" id="cmyk_form">
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">C:</label>
+							<div class="fancyInput ">
+								<input type="text" id="cmyk_C">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">M:</label>
+							<div class="fancyInput ">
+								<input type="text" id="cmyk_M">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">Y:</label>
+							<div class="fancyInput ">
+								<input type="text" id="cmyk_Y">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div class="color_form_item ">
+						<section class="input">
+							<label class="model-item-label">K:</label>
+							<div class="fancyInput ">
+								<input type="text" id="cmyk_K">
+							</div>
+							<label>%</label>
+						</section>
+					
+				</div>
+				</br>
+				<div id="cmyk_color"  class="color shadow">
+				</div>
+				<div class="color-description">
+					The CMYK color model is a subtractive color model, used in color printing, and is also used to describe the printing process itself. CMYK refers to the four inks used in some color printing: cyan, magenta, yellow, and key (black). Though it varies by print house, press operator, press manufacturer, and press run, ink is typically applied in the order of the abbreviation. 
+				</div>
+				<div>
+					<a href="#" class="button button-blue convert-button" id="cmyk_convert">
+					    <span>Convert</span>
+					</a>
+				</div>
+		</div>
+	</div>
+	</body>
+</html>
+

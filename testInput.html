@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/color_converter.js"></script>
+		<script type="text/javascript" src="js/jquery.popover-1.1.2.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/fancyInput.js"></script>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/fancyInput.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section class="input">
+				<div class="fancyInput test-div">
+					<input type="text" style="width: 840px;">
+				</div>
+		</section>
+
+		<script>
+		//$('section :input').val('').fancyInput()[0].focus();
+
+		// Everything below is only for the DEMO
+		function init(str){
+			var input = $('section input').val('')[0],
+				//s = 'type something... ✌'.split('').reverse(),
+				len = s.length-1,
+				e = $.Event('keypress');
+			
+			var	initInterval = setInterval(function(){
+					if( s.length ){
+						var c = s.pop();
+						fancyInput.writer(c, input, len-s.length).setCaret(input);
+						input.value += c;
+						//e.charCode = c.charCodeAt(0);
+						//input.trigger(e);
+						
+					}
+					else clearInterval(initInterval);
+			},150);
+		}
+		
+		init();
+		
+				
+		
+	</script>
+	</body>
+</html>
+
