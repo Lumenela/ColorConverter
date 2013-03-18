@@ -2,11 +2,10 @@ html, body { padding: 0; margin: 0; height: 100%; }
 
 body
 {
-	background-image:url('../img/bg2.jpg');
+  color: white;
 	background-color: white;
 	background-attachment: fixed;
-  /*color: white;*/
-  /*background:-webkit-radial-gradient(#205983, #0A2742); background:radial-gradient(#205983, #0A2742);*/
+  background:-webkit-radial-gradient(#205983, #0A2742); background:radial-gradient(#205983, #0A2742);
 }
 
 
@@ -20,39 +19,21 @@ body
 	background-color: rgba(255,255,255,0.7);
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	/*border-radius: 6px;*/
+	border-radius: 6px;
 	padding-top: 20px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
 	margin: 20px;
 	float:left;
-
-
-   /* background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
-                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(0, 0, 0, 0.05)), color-stop(.25, transparent), to(transparent)),
-                      -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05))),
-                      -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.75, transparent), color-stop(.75, rgba(0, 0, 0, 0.05)));
-    background-image: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
-                      -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 25%, transparent 25%, transparent),
-                      -moz-linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%),
-                      -moz-linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.05) 75%);
-*/
-    /* Pattern settings */
-    
-/*    -moz-background-size: 3px 3px;
-    -webkit-background-size: 3px 3px;
-    background-size: 3px 3px;*/
-
 	min-width: 220px;
-	width: 27%;
+	width: 30%;
 	height: 40%;
 	min-height: 454px;
 
 
-  /*background: rgba(0,0,0,.1);*/
-  /*box-shadow:0 1px 0 rgba(255,255,255,.15), 0 2px 4px rgba(0,0,0,.2) inset, 0 0 12px rgba(255,255,255,.1); */
-  /*padding:5px 5px; */
+  background: rgba(0,0,0,.1);
+  box-shadow:0 1px 0 rgba(255,255,255,.15), 0 2px 4px rgba(0,0,0,.2) inset, 0 0 12px rgba(255,255,255,.1); 
   border-radius:10px; 
 
 }
